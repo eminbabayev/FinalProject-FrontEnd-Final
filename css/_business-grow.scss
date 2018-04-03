@@ -7,15 +7,23 @@
         animation-name: business-fadeLeft;
         animation-fill-mode: forwards;
         margin-bottom: 30px;
+        img{
+            width: 100% !important;
+        }
     }
     .business-grow-text{
         h2{
         font-family: $font-ubuntu;                    
             @media screen and (max-width:1140px){
             &{
-                font-size: 30px;
+                font-size: 30px !important;
             }
             }
+            @media screen and (max-width:599px){
+                &{
+                    font-size: 26px !important;
+                }
+                }
         }
         p{
         margin-top: 20px;
@@ -53,4 +61,11 @@
             padding-right: 15px !important;
         }
     }
+}
+@media screen and (max-width:599px){
+.business-grow-text{
+    h2{
+        font-size: 26px !important;
+    }
+}
 }

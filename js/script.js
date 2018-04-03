@@ -173,7 +173,28 @@ if($(".agency-count").length){
   console.log("nfff")
 }) 
 }
+// $(window).click(function(e){
+//   if(e.offsetX<940 || e.offsetX>1260 ){
+//     $(".form-container").css("diplay","none !important");
+//     console.log("said lox")
+//   }
+// })
+// $(window).click(function(e){
+//   console.log(e.offsetX)
+// })
 
+$(window).click(function(e){
+    // console.log(e)
+    if(!$(".search-icon").is(e.target) && $(".search-icon").has(e.taget).length===0 && !$(".fa-search").is(e.target) && $(".fa-search").has(e.taget).length===0){
+     console.log("Fdff")
+    if(!$(".input-group").is(e.target)){
+      // $(".form-container").addClass("myhide");
+      $(".form-container").hide()
+      
+    }}
+
+  })
+ 
 
 })
   

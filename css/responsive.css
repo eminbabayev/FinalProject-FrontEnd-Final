@@ -1,6 +1,8 @@
 
 @media only screen and (max-width: 1140px){
-	
+	.tp-mask-wrap{
+		left:60px;
+	}
 	.main-slider h2{
 		font-size:48px !important;
 		line-height:1.4em;	
