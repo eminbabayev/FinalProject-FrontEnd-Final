@@ -1,0 +1,84 @@
+#check-happening{
+    padding: 140px 0;
+    background: $sky;
+    font-family: "Ubuntu", sans-serif;
+    .text-section-header{
+        margin-bottom: 60px;
+    }
+    .row{
+        // margin-left: -px;
+        // margin-right: -30px;
+         div[class*=col]{
+        padding: 0 30px;
+    }
+    }
+   
+    .check-box{
+        margin-bottom: 30px;
+        .check-img{
+            img{
+                width: 100%;
+            }
+        }
+        .check-footer{
+            padding: 40px 0;
+            background: white;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .check-date{
+                display: inline-block;
+                max-width: 35%;
+                left: 35px;
+                top: 40px;
+                text-align: center;
+                border-right: 2px solid #d9d9d9;
+                padding-right: 15px;
+                .check-day{
+                    font-size: 30px;
+                    line-height: 40px;
+                    font-weight: 300;
+                    font-family: "Ubuntu", sans-serif;
+                    color: #2fc42b;
+                    display: block;
+                    margin: 0;
+                    display: block;
+                }
+                .month,.year{
+                    display: block;                    
+                    font-size: 15px;
+                    line-height: 17px;
+                    color: #aaaaaa;
+                    font-weight: 500;
+                    font-family: "Ubuntu", sans-serif;
+                }
+            }
+            .check-text{
+                padding-left: 15px;
+                width: 65%;
+                display: inline-block;
+                // border-/
+                span{
+                    display: block;
+                    margin-right: 4px;
+                    line-height: 22px;
+                    font-size: 12px;
+                    color: #aaaaaa;
+                    font-weight: 300;
+                }
+                a{
+                    color:$dark;
+                    font-size: 20px;
+                    line-height: 25px;
+                    font-weight: 500;
+                    transition: all 0.3s;
+                    text-decoration: none;
+                    &:hover{
+                        color: $green;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+#business-grow{
+    padding: 100px 0;
+    
+    .business-grow-img{
+        opacity: 0;
+        animation-duration: 2s;
+        animation-name: business-fadeLeft;
+        animation-fill-mode: forwards;
+        margin-bottom: 30px;
+    }
+    .business-grow-text{
+        h2{
+        font-family: $font-ubuntu;                    
+            @media screen and (max-width:1140px){
+            &{
+                font-size: 30px;
+            }
+            }
+        }
+        p{
+        margin-top: 20px;
+        font-size: 18px;
+        color: #333333;
+        font-weight: 300;
+        line-height: 25px;
+        }
+        ul{
+            width: 100%;
+            padding: 0;
+            padding-left: 15px;
+            margin: 20px 0;
+            li{position: relative;
+                padding: 10px 0;
+                &::before{
+                    position: absolute;
+                    content: '\f0da';
+                    left: -15px;
+                    top: 12px;
+                    color: #2fc42b;
+                    font-size: 15px;
+                    font-family: "FontAwesome";
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:1140px){
+    #business-grow{
+        div[class*=col]:last-child{
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+        }
+    }
+}

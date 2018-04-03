@@ -1,0 +1,30 @@
+#owl{
+    background-color: #232732;
+    // .owl-slide{
+    //     width: 100%;
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     .owl-item{
+    //         width: 33.333333%;
+    //         // background: 
+    //         padding: 25px 0px;
+    //         position: relative;
+    //         text-align: center;
+    //         border-right: 1px solid #2f3340
+    //     }
+    // }
+    .container-fluid{
+        .col-lg-12{
+            padding: 0;
+        }
+        // width: 100%;
+        // padding: 0 15px;
+        .owl-item{
+            margin: 0 !important;
+        }
+        .item{
+            border-right: 1px solid #2f3340;
+            text-align: center;
+        }
+    }
+}

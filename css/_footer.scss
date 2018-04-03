@@ -1,0 +1,156 @@
+footer{
+  
+    h5{
+        color: #ffffff;
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        font-family: $font-ubuntu;
+    }
+    
+
+    .main-footer{
+        background-image: url(../img/footer/img1.png);
+        background-color: #252934;  
+        padding: 85px 0px 60px;
+        .footer-box{
+            margin-bottom:40px;
+        }
+        .footer-logo-box{
+                padding-right: 50px;
+            .f-logo{
+                width: 167px;
+                margin-bottom:25px;
+            }
+            .f-text{
+                @extend %footer-text;
+            }
+            .f-contact-info{
+                font-size: 15px;
+                line-height: 32px;
+                color: #ffffff;
+                font-weight: 500;
+                font-family: $font-ubuntu;
+                span{
+                    display: block;
+                }
+            }
+        }
+        .footer-links-box{
+            padding-top: 15px;
+            h5{
+    
+            }
+            .f-links{
+                padding: 0;
+                li{
+                    a{
+                        transition: all 0.3s;
+                        text-decoration: none;
+                        @extend %footer-text;
+                        line-height: 32px;
+                        &:hover{
+                            color: $green;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-subscribe-box{
+            div[class*=col]{
+                padding: 0;
+            }
+            padding-top: 15px;
+            .form-group{
+                margin-bottom:35px;
+                position: relative;
+            }
+            input{
+                position: relative;
+                border-radius: 0;
+                line-height: 30px;
+                padding: 7px 20px;
+                padding-right: 115px;
+                height: 44px;
+                font-size: 15px;
+                color: #61646a;
+                background-color: #282d38;
+                border: 1px solid transparent;
+                font-family: $font-poppins;
+                font-weight: 300;
+                &:focus{
+                    box-shadow: none;
+                    border-color: $green;
+                    background:  #282d38;
+                }
+            }
+            .f-btn{
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 7px 32px;
+                line-height: 26px;
+                text-transform: uppercase;
+                background: #2fc42b;
+                color: #ffffff;
+                font-size: 15px;
+                font-weight: 700;
+                border: 2px solid #2fc42b;
+                font-family: 'Ubuntu', sans-serif;
+                transition: all 0.3s;
+                &:hover{
+                    background: transparent;
+                }
+            }
+            .social-media{
+                padding-left: 0;
+
+                li{
+                   display: inline-block;
+                    a{  display: inline-block;
+                        width: 30px;
+                        height: 30px;
+                        font-size: 14px;
+                        color: #4b515f;
+                        line-height: 30px;
+                        text-align: center;
+                        transition: all 0.3s;
+                        &:hover{
+                            color: $green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .f-footer{
+        text-align: center;
+        background-color: #1c1f27;
+        padding: 25px 0;
+        span{
+            color: #aaaaaa;
+            font-size: 14px;
+            font-family: 'Poppins', sans-serif;
+            line-height: 25px;
+        }
+    }
+}
+@media screen and (max-width:480px){
+    .footer-box{
+        text-align: center;
+    }
+    .footer-logo-box{
+        padding: 0 !important;
+        .f-logo{
+            width: 100% !important;
+            text-align: center;
+        }
+    }
+    .f-btn{
+        position: relative !important;
+        margin-top: 8px;
+        width: 100%;
+    }
+}

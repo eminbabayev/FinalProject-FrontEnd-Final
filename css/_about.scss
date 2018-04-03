@@ -1,0 +1,48 @@
+#about{
+
+
+
+
+#vision{
+    padding: 140px 0 110px;
+    .vision-text-box{
+        margin-bottom: 30px;
+        padding-right: 45px;
+        .text-section-header{   
+            margin-bottom: 30px;
+        }
+        .vision-text{
+            font-size: 20px;
+            line-height: 25px;
+            color: #333333;
+            font-weight: 300;
+            // font-family: "Changa", sans-serif;
+            margin-bottom: 30px;
+            a{
+                text-decoration: none;
+                color:$green;
+            }
+        }
+        p{
+            margin-bottom: 30px;
+        }
+    }
+    .vision-img-box{
+        margin-top: 10px;
+        margin-bottom: 40px;
+        text-align: right;
+    }
+    @media screen  and (max-width:992px){
+        .vision-img-box{
+            text-align: center;
+        }
+    }
+    @media screen and (max-width:768px) {
+        .vision-text-box{
+            br{
+                display: none;
+            }
+        }
+    }
+}
+}

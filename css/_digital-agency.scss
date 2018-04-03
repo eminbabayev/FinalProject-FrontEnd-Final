@@ -1,0 +1,167 @@
+.digital-agency{
+    img{
+        max-width: 100% !important;
+    }
+    position: relative;
+    padding: 135px 0px 110px;
+    background: $sky;
+    .digital-text{
+        padding-bottom: 50px;
+        h2{
+            font-weight: 700;
+            font-size: 35px;            
+           span{
+                color: $green;
+           }
+        }
+    }
+    
+    .digital-items{
+        background: $link-color;
+        .agency-item{
+            animation-duration: 1s;
+            background-color: $link-color;
+            // animation-name: fadeDown;
+            padding: 40px 30px;
+            margin: 0 15px;
+            margin-bottom: 30px;            
+            @media screen and (max-width:1024px){
+            &{
+                    margin-left: 0;
+                    margin-right: 0;
+            }  
+            }
+            .agency-item-links{
+                margin-top: 10px;
+                a{
+                transition: all 0.3s ease-out;
+                -webkit-transition: all 0.3s ease-out;
+                -moz-transition: all 0.3s ease-out;
+                -o-transition: all 0.3s ease-out;
+                &:hover{
+                    color:$green;
+                    text-decoration: none;  
+                    &::after{
+                        color: $green;
+                    }                                      
+                }
+                }
+                
+            .agency-item-links-text{
+                position: relative;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 25px;
+                color: #333333;
+                margin-bottom: 20px;
+                
+            }
+            .agency-item-links-link{
+                font-size: 15px;
+                line-height: 25px;
+                font-weight: 300;
+                color: #aaaaaa;
+                display: block;
+                margin-top: 20px;
+                    &::after{
+                        font-size: 15px;
+                        line-height: 25px;
+                        font-weight: 300;
+                        color: #aaaaaa;
+                        content: "\f105";
+                        // transition: all 0.15s;
+                        font-family: 'FontAwesome';
+                        position: absolute;
+                        margin-left: 3px;
+                        font-size: 15px;
+                        margin-top: 1px; 
+                    }
+            }
+        }
+        }
+        .fadeLeft{
+            animation-name: fadeLeft
+        }
+        .fadeUp{
+            animation-name:fadeUp;
+        }
+        .fadeDown{
+            animation-name: fadeDown;
+        }
+        
+    }
+}
+.agency-count{
+    div[class*=col]{
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    // div[class*=col]:first-child{
+    //     padding-left: 15px;
+    // }
+    // div[class*=col]:last-child{
+    //     padding-right: 15px;
+    // }
+    padding:100px 0 80px;
+    background-image: url(../img/agency-img/bg-count.png);
+    background-size: cover;
+    .count-item{
+        padding: 80px 15px 70px;
+        background-color: #333743;
+        margin-bottom: 30px;
+        .count-icon{
+            
+            display: block;
+            font-size: 70px;
+            line-height: 1em;
+            margin-bottom: 20px;
+            font-family: 'FontAwesome';
+            font-style: normal;
+        }
+        .count-icon1{
+            color:$count-icon-pink;
+            &::after{
+                content: "\f140"; 
+            }            
+        }
+        .count-icon2{
+            color:$green;
+            &::after{
+                content: "\f007"
+            }
+        }
+        .count-icon3{
+            color:$count-icon-gold;
+            &::after{
+                content: "\f008"
+            }
+        }
+        .count-icon4{
+            color:$count-icon-orange;
+            &::after{
+                content: "\f091"
+            }
+        }
+        .count-text{
+            h2{
+                position: relative;
+                font-weight: 700;
+                color: #edf7ff;
+                font-size: 50px;
+                display: block;
+                line-height: 1em;
+                font-weight: 700;
+            }
+            p{
+                position: relative;
+                font-size: 20px;
+                font-weight: 500;
+                color: #edf7ff;
+                display: block;
+                margin-bottom: 5px;
+            }
+           
+        }
+    }
+}
+

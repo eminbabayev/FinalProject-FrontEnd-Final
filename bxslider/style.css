@@ -1,0 +1,56 @@
+.bxslider{
+    background-image: url("images/bg.jpg");
+    padding-top: 50px;
+}
+
+.bxslider img{
+    width: 100%;
+}
+.bxslider .images{
+    text-align: center;
+}
+.bxslider .images a{
+    display: inline-block;
+    background: #777777;
+    width: 100%;
+}
+.bxslider .images div{
+    margin-bottom: 10px;
+}
+.bxslider .images .active{
+    background: white;
+}
+.bx-wrapper{
+    font-style: italic;
+    background: transparent;
+    color: white;
+    border: none;
+    box-shadow: none;
+}
+.bxslider .bx-controls-direction{
+    top: 100%;
+}
+.bxslider .bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 105%;
+    margin-top: -16px;
+    outline: 0;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    z-index: 9999;
+}
+.bx-controls-direction .bx-prev{
+    top: 105%;
+    left: 10px;
+}
+.bxslider .bx-controls-direction .bx-next{
+    top: 105%;
+    left: 50px;
+}
+.bxslider .info{
+    font-style: normal;
+}
+.bxslider .info p:nth-child(2){
+    color: green;
+}
